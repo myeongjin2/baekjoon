@@ -13,7 +13,7 @@ int main(void) {
 	for (i = 0; i < 2 * n; i++) {
 		scanf("%d", &k);
 		chk[k] ? --cnt : ++cnt;
-		chk[k] ^= 1;
+		chk[k] ^= 1;	//bit연산자, 다르면 1 같으면 0
 		ans = max(ans, cnt);
 	}
 
