@@ -1,27 +1,27 @@
 #include <iostream>
 #include <set>
 using namespace std;
-
 int main() {
-	int n;
-	scanf("%d", &n);
+    int n;
+    scanf("%d",&n);
 
-	multiset<int> s;
-	for (int i = 0; i < n; i++) {
-		int x;
-		scanf("%d", &x);
-		s.insert(x);
-	}
+    multiset<int> s;
+    for (int i=0; i<n; i++) {
+        int x;
+        scanf("%d",&x);
+        s.insert(x);
+    }
 
-	int m;
-	scanf("%d", &m);
+    int m;
+    scanf("%d",&m);
 
-	for (int i = 0; i < m; i++) {
-		int x;
-		scanf("%d", &x);
-		printf("%d ", s.count(x));
-	}
+    for (int i=0; i<m; i++) {
+        int x;
+        scanf("%d",&x);
+        printf("%d ",s.count(x));
+    }
 
-	printf("\n");
-	return 0;
+    printf("\n");
+
+    return 0;
 }
