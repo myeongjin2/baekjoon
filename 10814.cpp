@@ -25,7 +25,7 @@ int main() {
 	});
 	
 	for (auto p : a) {
-		cout << p.age << ' ' < p.name << '\n';
+		cout << p.age << ' ' << p.name << '\n';
 	}
 	return 0;
 }
